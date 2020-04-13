@@ -14,9 +14,7 @@ def challenge1 (data):
         timeToElapse = timeToElapse * 7
   elif periodType == "months":
         timeToElapse = timeToElapse * 30
-  else:
-        raise ValueError("periodType has invalid type, \
-                          it can either be 'days', 'weeks' or 'months'")
+
 
   factor = timeToElapse // 3
   Impact_infectionsByRequestedTime = Impact_currentlyInfected * (2 ** factor)
@@ -38,7 +36,31 @@ def challenge1 (data):
 def estimator(data):
 
   resultChal1 = challenge1(data)
+  
 
-  return data
+  return resultChal1
+
+
+print("name")
+
+if __name__ == "__main__":
+  print("o")
+  data = { "region": {
+  "name": "Africa",
+  "avgAge": 19.7,
+  "avgDailyIncomeInUSD": 5,
+  "avgDailyIncomePopulation": 0.71
+  },
+  "periodType": "days",
+  "timeToElapse": 58,
+  "reportedCases": 674,
+  "population": 66622705,
+  "totalHospitalBeds": 1380614
+  }
+
+  result = estimator(data)
+
+  print(result)
+
 
 
