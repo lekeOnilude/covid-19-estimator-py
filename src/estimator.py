@@ -23,7 +23,7 @@ def challenge1 (data):
 
   
   impact = {"currentlyInfected":Impact_currentlyInfected, 
-  "infectionsByRequestedTime,":Impact_infectionsByRequestedTime}
+  "infectionsByRequestedTime":Impact_infectionsByRequestedTime}
 
   severeImpact = {"currentlyInfected": Severe_currentlyInfected,
   "infectionsByRequestedTime":Severe_infectionsByRequestedTime}
@@ -52,7 +52,7 @@ if __name__ == "__main__":
   "avgDailyIncomePopulation": 0.71
   },
   "periodType": "days",
-  "timeToElapse": 58,
+  "timeToElapse": 3,
   "reportedCases": 674,
   "population": 66622705,
   "totalHospitalBeds": 1380614
